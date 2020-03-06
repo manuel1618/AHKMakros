@@ -16,7 +16,63 @@
   </General>
   <Macros>
     <Macro>
-      <Device>Keyb14</Device>
+      <Device>Keyb4</Device>
+      <Name>WIN+RIGHT</Name>
+      <KeyCode>39</KeyCode>
+      <Direction>down</Direction>
+      <Action>SEQ</Action>
+      <Sequence>#{RIGHT}</Sequence>
+      <SCEvent></SCEvent>
+      <XPLCommand></XPLCommand>
+      <ScriptSource></ScriptSource>
+      <SCText>0</SCText>
+      <SCParams></SCParams>
+      <Command></Command>
+    </Macro>
+    <Macro>
+      <Device>Keyb4</Device>
+      <Name>WIN+LEFT</Name>
+      <KeyCode>37</KeyCode>
+      <Direction>down</Direction>
+      <Action>SEQ</Action>
+      <Sequence>#{LEFT}</Sequence>
+      <SCEvent></SCEvent>
+      <XPLCommand></XPLCommand>
+      <ScriptSource></ScriptSource>
+      <SCText>0</SCText>
+      <SCParams></SCParams>
+      <Command></Command>
+    </Macro>
+    <Macro>
+      <Device>Keyb4</Device>
+      <Name>WIN+UP</Name>
+      <KeyCode>38</KeyCode>
+      <Direction>down</Direction>
+      <Action>SEQ</Action>
+      <Sequence>#{UP}</Sequence>
+      <SCEvent></SCEvent>
+      <XPLCommand></XPLCommand>
+      <ScriptSource></ScriptSource>
+      <SCText>0</SCText>
+      <SCParams></SCParams>
+      <Command></Command>
+    </Macro>
+    <Macro>
+      <Device>Keyb4</Device>
+      <Name>WIN+DOWN</Name>
+      <KeyCode>40</KeyCode>
+      <Direction>down</Direction>
+      <Action>SEQ</Action>
+      <Sequence>#{DOWN}</Sequence>
+      <SCEvent></SCEvent>
+      <XPLCommand></XPLCommand>
+      <ScriptSource></ScriptSource>
+      <SCText>0</SCText>
+      <SCParams></SCParams>
+      <Command></Command>
+    </Macro>
+    <Macro>
+      <Device>Keyb4</Device>
       <Name>STRG+NUM1</Name>
       <KeyCode>97</KeyCode>
       <Direction>down</Direction>
@@ -30,7 +86,7 @@
       <Command></Command>
     </Macro>
     <Macro>
-      <Device>Keyb14</Device>
+      <Device>Keyb4</Device>
       <Name>STRG+NUM2</Name>
       <KeyCode>98</KeyCode>
       <Direction>down</Direction>
@@ -44,7 +100,7 @@
       <Command></Command>
     </Macro>
     <Macro>
-      <Device>Keyb14</Device>
+      <Device>Keyb4</Device>
       <Name>STRG+NUM3</Name>
       <KeyCode>99</KeyCode>
       <Direction>down</Direction>
@@ -58,7 +114,7 @@
       <Command></Command>
     </Macro>
     <Macro>
-      <Device>Keyb14</Device>
+      <Device>Keyb4</Device>
       <Name>STRG+NUM4</Name>
       <KeyCode>100</KeyCode>
       <Direction>down</Direction>
@@ -72,7 +128,7 @@
       <Command></Command>
     </Macro>
     <Macro>
-      <Device>Keyb14</Device>
+      <Device>Keyb4</Device>
       <Name>STRG+NUM5</Name>
       <KeyCode>101</KeyCode>
       <Direction>down</Direction>
@@ -87,9 +143,13 @@
     </Macro>
   </Macros>
   <Devices>
+    <Mouse>
+      <Name>Mouse3</Name>
+      <SystemID>\\?\HID#VID_046D&amp;PID_C231#2&amp;1DD8BFAF&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Mouse>
     <Keyboard>
-      <Name>Keyb4</Name>
-      <SystemID>\\?\HID#VID_03F0&amp;PID_0024#8&amp;2BADC4EF&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+      <Name>Keyb1</Name>
+      <SystemID>\\?\HID#VID_046D&amp;PID_C232#2&amp;33191FED&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
     <Keyboard>
       <Name>Keyb6</Name>
@@ -98,6 +158,10 @@
     <Keyboard>
       <Name>Keyb7</Name>
       <SystemID>\\?\HID#VID_1532&amp;PID_0109&amp;MI_00#9&amp;C52D4D1&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Keyboard>
+      <Name>Keyb4</Name>
+      <SystemID>\\?\HID#VID_03F0&amp;PID_0024#8&amp;2BADC4EF&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
     <Mouse>
       <Name>Mouse4</Name>
@@ -112,20 +176,12 @@
       <SystemID>\\?\HID#VID_046D&amp;PID_C31C&amp;MI_00#7&amp;EC378B5&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
     <Keyboard>
-      <Name>Keyb1</Name>
-      <SystemID>\\?\HID#VID_046D&amp;PID_C232#2&amp;33191FED&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
-    </Keyboard>
-    <Keyboard>
       <Name>Keyb2</Name>
       <SystemID>\\?\HID#VID_03F0&amp;PID_034A&amp;MI_00#7&amp;30494614&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
     <Mouse>
       <Name>Mouse1</Name>
       <SystemID>\\?\HID#VID_046D&amp;PID_C245&amp;MI_00#7&amp;31994F7A&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
-    </Mouse>
-    <Mouse>
-      <Name>Mouse3</Name>
-      <SystemID>\\?\HID#VID_046D&amp;PID_C231#2&amp;1DD8BFAF&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Mouse>
     <Game>
       <Name>3Dconnexion KMJ Emulator</Name>
