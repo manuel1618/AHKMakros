@@ -8,14 +8,31 @@ SetTitleMatchMode 2
 ;; original found here : https://www.youtube.com/watch?v=u9IhWCyPKso
 
 ;; ------------ Here after come the shortcuts -------------------------------------------------------------------------------------------------------------------------------------
-TooltipHotkeys := [new HypermeshToolTip("F2", "Delete", "Delete Entities")
-				 , new HypermeshToolTip("F1", "Help Me", "I pressed F1, so help me!")
-				 , new HypermeshToolTip("F4", "Distance Panel", "Measure Distances but also for getting the circle center point")
-				 , new HypermeshToolTip("F5", "Mask Panel", "Hide / and show Entities")
-				 , new HypermeshToolTip("F11", "Geom QuickEdit", "For fixing Geometry fast and easy")
+TooltipHotkeys := [new HypermeshToolTip("F1", "Help Me", "I pressed F1, so help me!")
+				 , new HypermeshToolTip("F2", "Delete", "")
+				 , new HypermeshToolTip("F3", "Replace", "")
+				 , new HypermeshToolTip("F4", "Distance", "Measure Distances but also for getting the circle center point")
+				 , new HypermeshToolTip("F5", "Mask", "Hide / and show Entities")
+				 , new HypermeshToolTip("F6", "Edit element: Combine", "")
+				 , new HypermeshToolTip("F7", "Node edit: Align", "")
+				 , new HypermeshToolTip("F8", "Create a Node", "")
+				 , new HypermeshToolTip("F9", "Line edit", "")
+				 , new HypermeshToolTip("F10", "Check Elements 2D", "")
+				 , new HypermeshToolTip("F11", "Quick Geometry Edit", "For fixing Geometry fast and easy")
+				 , new HypermeshToolTip("F12", "2D Automesh", "Creating 2D Element Meshes on Surfaces") ;Automesh
+				 , new HypermeshToolTip("+F1", "Colour", "")
+				 , new HypermeshToolTip("+F2", "Temporary Nodes", "")
+				 , new HypermeshToolTip("+F3", "Edges", "... also for equivalence")
+				 , new HypermeshToolTip("+F4", "Translate", "")
+				 , new HypermeshToolTip("+F5", "Find attached elements", "")
+				 , new HypermeshToolTip("+F6", "Split plate elements", "")
+				 , new HypermeshToolTip("+F7", "Project to plane", "")
+				 , new HypermeshToolTip("+F8", "Node edit: Align", "")
+				 , new HypermeshToolTip("+F9", "Trim", "")
+				 , new HypermeshToolTip("+F10", "Normals", "")
 				 , new HypermeshToolTip("+F11", "Organize", "Move or Copy Entities")
-				 , new HypermeshToolTip("^z", "Revert", "I screwed up")
-				 , new HypermeshToolTip("F12", "2D Automesh", "Creating 2D Element Meshes on Surfaces")]  ;; <---- watch out, don't forget the ] here at the end of the last line
+				 , new HypermeshToolTip("+F12", "Smooth", "")
+				 , new HypermeshToolTip("^z", "Revert", "I screwed up")]  ;; <---- watch out, don't forget the ] here at the end of the last line
 ;; ------------ End of the shortcuts -----------------------------------------------------------------------------------------------------------------------------------------------
 
 ^r::Reload
