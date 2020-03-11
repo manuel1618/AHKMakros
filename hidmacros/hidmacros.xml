@@ -85,6 +85,34 @@
       <SCParams></SCParams>
       <Command></Command>
     </Macro>
+    <Macro>
+      <Device>Keyb4</Device>
+      <Name>STRG+NUM6</Name>
+      <KeyCode>102</KeyCode>
+      <Direction>down</Direction>
+      <Action>SEQ</Action>
+      <Sequence>^({NUM6})</Sequence>
+      <SCEvent></SCEvent>
+      <XPLCommand></XPLCommand>
+      <ScriptSource></ScriptSource>
+      <SCText>0</SCText>
+      <SCParams></SCParams>
+      <Command></Command>
+    </Macro>
+    <Macro>
+      <Device>Keyb4</Device>
+      <Name>STRG+SHIFT6</Name>
+      <KeyCode>105</KeyCode>
+      <Direction>down</Direction>
+      <Action>SEQ</Action>
+      <Sequence>^+({NUM6})</Sequence>
+      <SCEvent></SCEvent>
+      <XPLCommand></XPLCommand>
+      <ScriptSource></ScriptSource>
+      <SCText>0</SCText>
+      <SCParams></SCParams>
+      <Command></Command>
+    </Macro>
   </Macros>
   <Devices>
     <Game>

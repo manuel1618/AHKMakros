@@ -39,6 +39,8 @@ if WinActive("ahk_class Chrome_WidgetWin_1")
 	Send ^+{tab}
 if WinActive("ahk_class Notepad++")
 	Send ^+{tab}
+if WinActive("ahk_exe slack.exe")
+	Send !{up}
 if WinActive("ahk_exe Adobe Premiere Pro.exe")
 	Send {F12} ;F12 is my shortcut in premiere for "go back"(in bins)
 if WinActive("ahk_exe explorer.exe")
@@ -96,11 +98,11 @@ Return
 
 
 
-^numpad6::
-installDir43v3 = %A_ProgramFiles% ; USERSPECIFIC
+^+numpad6::
+installDir43v3 = %A_ProgramFiles%\DesignCockpit43 ; USERSPECIFIC
 Process, Exist, DesignCockpit43.exe
 	If errorLevel = 0
-		Run, %installDir43v3%\DesignCockpit43\DesignCockpit43.exe
+		Run, %installDir43v3%\DesignCockpit43.exe
 	else
 	{
 	GroupAdd, designCockpits, ahk_exe DesignCockpit43.exe
@@ -112,16 +114,17 @@ Process, Exist, DesignCockpit43.exe
 Return
 
 
-installDir43v2 = %A_ProgramFiles%\DesignCockpit43 ; USERSPECIFIC
-^+numpad6::
+
+^numpad6::
+installDir43v2 = %A_ProgramFiles%\DesignCompiler43 ; USERSPECIFIC
 Process, Exist, DesignCockpit43.exe
 	If errorLevel = 0
-		Run, %InstallDir43v2%\DesignCompiler43\DesignCompiler43.exe
+		Run, %InstallDir43v2%\DesignCompiler43.exe
 	else
 	{
-	GroupAdd, designCockpits, ahk_exe DesignCockpit43.exe
+	GroupAdd, designCompilers, ahk_exe DesignCompiler43.exe
 	if WinActive("ahk_exe DesignCockpit43.exe")
-		GroupActivate, designCockpits, r
+		GroupActivate, designCompilers, r
 	else
 		WinActivate ahk_exe DesignCockpit43.exe
 	}
