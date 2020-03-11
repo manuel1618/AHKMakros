@@ -17,62 +17,6 @@
   <Macros>
     <Macro>
       <Device>Keyb4</Device>
-      <Name>WIN+RIGHT</Name>
-      <KeyCode>39</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>#{RIGHT}</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-    <Macro>
-      <Device>Keyb4</Device>
-      <Name>WIN+LEFT</Name>
-      <KeyCode>37</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>#{LEFT}</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-    <Macro>
-      <Device>Keyb4</Device>
-      <Name>WIN+UP</Name>
-      <KeyCode>38</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>#{UP}</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-    <Macro>
-      <Device>Keyb4</Device>
-      <Name>WIN+DOWN</Name>
-      <KeyCode>40</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>#{DOWN}</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-    <Macro>
-      <Device>Keyb4</Device>
       <Name>STRG+NUM1</Name>
       <KeyCode>97</KeyCode>
       <Direction>down</Direction>
@@ -105,7 +49,7 @@
       <KeyCode>99</KeyCode>
       <Direction>down</Direction>
       <Action>SEQ</Action>
-      <Sequence>^({NUM3})</Sequence>
+      <Sequence>^{NUM3}</Sequence>
       <SCEvent></SCEvent>
       <XPLCommand></XPLCommand>
       <ScriptSource></ScriptSource>
@@ -134,6 +78,62 @@
       <Direction>down</Direction>
       <Action>SEQ</Action>
       <Sequence>^({NUM5})</Sequence>
+      <SCEvent></SCEvent>
+      <XPLCommand></XPLCommand>
+      <ScriptSource></ScriptSource>
+      <SCText>0</SCText>
+      <SCParams></SCParams>
+      <Command></Command>
+    </Macro>
+    <Macro>
+      <Device>Keyb4</Device>
+      <Name>WIN+DOWN</Name>
+      <KeyCode>40</KeyCode>
+      <Direction>down</Direction>
+      <Action>SEQ</Action>
+      <Sequence>#{DOWN}</Sequence>
+      <SCEvent></SCEvent>
+      <XPLCommand></XPLCommand>
+      <ScriptSource></ScriptSource>
+      <SCText>0</SCText>
+      <SCParams></SCParams>
+      <Command></Command>
+    </Macro>
+    <Macro>
+      <Device>Keyb4</Device>
+      <Name>WIN+LEFT</Name>
+      <KeyCode>37</KeyCode>
+      <Direction>down</Direction>
+      <Action>SEQ</Action>
+      <Sequence>#{LEFT}</Sequence>
+      <SCEvent></SCEvent>
+      <XPLCommand></XPLCommand>
+      <ScriptSource></ScriptSource>
+      <SCText>0</SCText>
+      <SCParams></SCParams>
+      <Command></Command>
+    </Macro>
+    <Macro>
+      <Device>Keyb4</Device>
+      <Name>WIN+RIGHT</Name>
+      <KeyCode>39</KeyCode>
+      <Direction>down</Direction>
+      <Action>SEQ</Action>
+      <Sequence>#{RIGHT}</Sequence>
+      <SCEvent></SCEvent>
+      <XPLCommand></XPLCommand>
+      <ScriptSource></ScriptSource>
+      <SCText>0</SCText>
+      <SCParams></SCParams>
+      <Command></Command>
+    </Macro>
+    <Macro>
+      <Device>Keyb4</Device>
+      <Name>WIN+UP</Name>
+      <KeyCode>38</KeyCode>
+      <Direction>down</Direction>
+      <Action>SEQ</Action>
+      <Sequence>#{UP}</Sequence>
       <SCEvent></SCEvent>
       <XPLCommand></XPLCommand>
       <ScriptSource></ScriptSource>
