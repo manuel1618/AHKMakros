@@ -5,45 +5,72 @@ SendMode Input
 SetBatchLines -1
 SetTitleMatchMode 2
 
-;; original found here : https://www.youtube.com/watch?v=u9IhWCyPKso
+
+;; original found here : https://www.autohotkey.com/boards/viewtopic.php?f=76&t=61880&hilit=premiere
+;; comments, some additions and removals : krea.city : https://www.youtube.com/channel/UCzDZYbPaUkQd2zUN_ZdJbYg
 
 ;; ------------ Here after come the shortcuts -------------------------------------------------------------------------------------------------------------------------------------
-TooltipHotkeys := [new HypermeshToolTip("F2", "Auto Vervollständigung", "I love it!")
-				 , new HypermeshToolTip("F1", "Help Me", "I pressed F1, so help me!")
-				 , new HypermeshToolTip("F4", "Distance Panel", "Measure Distances but also for getting the circle center point")
-				 , new HypermeshToolTip("F5", "Mask Panel", "Hide / and show Entities")
-				 , new HypermeshToolTip("F11", "Geom QuickEdit", "For fixing Geometry fast and easy")
-				 , new HypermeshToolTip("+F11", "Organize", "Move or Copy Entities")
-				 , new HypermeshToolTip("^z", "Revert", "I screwed up")
-				 , new HypermeshToolTip("F12", "2D Automesh", "Creating 2D Element Meshes on Surfaces")]  ;; <---- watch out, don't forget the ] here at the end of the last line
+TooltipHotkeys := [new ToolTip("^1", "AutoCorrect", "Suggestions how to resolve an error")
+				 , new ToolTip("^Space", "AutoComplete", "Only lazy programmers type much")
+				 , new ToolTip("^f", "Search", "Search and you shall recieve")
+				 , new ToolTip("^c", "Copy", "Copy this item")
+				 , new ToolTip("^d", "Delete line", "")
+				 , new ToolTip("^v", "Paste", "Paste this item")
+				 , new ToolTip("Enter", "Enter", "Smash it!")
+				 , new ToolTip("^Left", "Faster move cursor", "Cause faster is better")
+				 , new ToolTip("^Right", "Faster move cursor", "Cause faster is better")
+				 , new ToolTip("^Down", "Faster move cursor", "Cause faster is better")
+				 , new ToolTip("^Up", "Faster move cursor", "Cause faster is better")
+				 , new ToolTip("^+Left", "Faster mark", "Cause faster is better")
+				 , new ToolTip("^+Right", "Faster mark", "Cause faster is better")
+				 , new ToolTip("^+Down", "Faster mark", "Cause faster is better")
+				 , new ToolTip("^+Up", "Faster mark", "Cause faster is better")
+				 , new ToolTip("^!Up", "Copy Line Upwards", "Pretty awesome shortcut")
+				 , new ToolTip("^!Down", "Copy Line Downwards", "Pretty awesome shortcut")
+				 , new ToolTip("!Down", "Move Line Downwards", "Ah I love it!")
+				 , new ToolTip("!Up", "Move Line Upwards", "Ah I love it!")
+				 , new ToolTip("^BS", "Delete Faster", "")
+				 , new ToolTip("^Delete", "Delete Faster", "")
+				 , new ToolTip("^Home", "Top of the File", "")
+				 , new ToolTip("Home", "Beginning of the Line", "")
+				 , new ToolTip("^s", "Save", "Save, for God's sake save!")
+				 , new ToolTip("^z", "UnDo", "I screwed Up! Sorry :-D")]  ;; <---- watch out, don't forget the ] here at the end of the last line
 ;; ------------ End of the shortcuts -----------------------------------------------------------------------------------------------------------------------------------------------
 
-^r::Reload
-
-class HypermeshToolTip
+class ToolTip
 {
-	static GUI_WIDTH := 400    ;; width of the box
+	static GUI_WIDTH := 700    ;; width of the box
 		 , GUI_HEIGHT := 100    ;; height of the box
 		 , PADDING := 5         ;; it will be called margin afterwards in the code, but really it's padding (inside margin if you want)
  		 , MARGIN := 50    ;; margin (only used in the ShowDescription)
-		 , TEXT_WIDTH := HypermeshToolTip.GUI_WIDTH - 2 * HypermeshToolTip.PADDING
-		 , EXE := "ahk_exe hw.exe"
-		 , COLOR_SCHEME := {"BACKGROUND": "5f5d5d"    ;; background color, will be set a little bit transparent later on
+		 , TEXT_WIDTH := ToolTip.GUI_WIDTH - 2 * ToolTip.PADDING
+		 , EXE := "ahk_exe DesignCockpit43.exe"
+		 , COLOR_SCHEME := {"BACKGROUND": "1D1D1D"    ;; background color, will be set a little bit transparent later on
 						  , "SEPARATOR": "313131"	;; color of the line between title and description
-						  , "TITLE": "00a9e1"
-						  , "DESCRIPTION": "ffc845"}
-		, DELAY := 2500		;; how many milliseconds the tooltip is displayed
+						  , "TITLE": "2D8CEB"
+						  , "DESCRIPTION": "A7A7A7"}
+		, DELAY := 1500		;; how many milliseconds the tooltip is displayed
 		
 		
 ;; constructor for the keybind : hotkey, function, description
 	__New(keybind, name, description) {
 		;; added to display "CTRL+" in place of "^" in, f.i. "^c" which stands for "CTRL+C"
+		
+		keybindTXT := keybind
 		IfInString, keybind, ^ 
 			{
 				keybindTXT:= StrReplace(keybind, "^", "CTRL+")
 			}	
-			else keybindTXT := keybind
-			
+		IfInString, keybind, !
+			{
+				keybindTXT:= StrReplace(keybind, "!", "Alt+")
+			}	
+		IfInString, keybind, +
+			{
+				keybindTXT:= StrReplace(keybind, "+", "Shift+")
+			}	
+		
+	
 		Gui New, +AlwaysOnTop -Caption +ToolWindow +Hwndhwnd
 		Gui Color, % this.COLOR_SCHEME.BACKGROUND
 		Gui Margin, % this.PADDING, % this.PADDING ;; this Margin thing should be called Padding as it this the margin inside the gui...
@@ -102,25 +129,42 @@ class HypermeshToolTip
 		Hotkey If, % fn
 			Hotkey % this.keybind, Off
 		Hotkey If
+		
 	}
 
 	;; check if the executable in the EXE static are active
 	isPremiereActive() {
-		return WinActive(ahk_exe DesignCockpit43.exe) && !A_CaretX
+		return WinActive(ToolTip.EXE)
 	}
 
 	;; shows the box
 	showDescription(hwnd, keybind) {
-		WinGetPos x, y, w, h, % DesignCockpit43.exe
-		Gui %hwnd%: Show, % Format("x{} y{} NoActivate", x + HypermeshToolTip.MARGIN, h - HypermeshToolTip.MARGIN - HypermeshToolTip.GUI_HEIGHT )
+		WinGetPos x, y, w, h, % ToolTip.EXE
+		Gui %hwnd%: Show, % Format("x{} y{} NoActivate", x + ToolTip.MARGIN, h - ToolTip.MARGIN - ToolTip.GUI_HEIGHT )
 		
-		Send % "{" keybind "}"
+		
+		modifierkeys := ["Space","Enter","Up","Down","Left","Right","BS","Tab","Insert","Home","PgUp","PgDn","Delete","End"]
+		for index, key in modifierkeys
+		{
+			
+			IfInString, keybind, %key%
+			{
+				keyM = {%key%}
+				StringReplace, keybindWithModifiers, keybind, %key%, %keyM%
+				Break
+			}
+			else 
+			{
+				keybindWithModifiers := keybind
+			}
+		}
+		;MsgBox %keybindWithModifiers%
+		Send %keybindWithModifiers%
 	}
 
 	;; hides the box
 	hideDescription(hwnd, keybind) {
-		sleep, HypermeshToolTip.DELAY ;; wait for the duration of DELAY...
+		sleep, ToolTip.DELAY ;; wait for the duration of DELAY...
 		Gui %hwnd%: Hide ;; ...then hide the box
 	}
 }
-
