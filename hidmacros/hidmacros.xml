@@ -115,10 +115,10 @@
     </Macro>
   </Macros>
   <Devices>
-    <Game>
-      <Name>SpacePilot PRO 3Dmouse </Name>
-      <SystemID>A7175480:3E2B:11E8:8001444553540000</SystemID>
-    </Game>
+    <Keyboard>
+      <Name>Keyb6</Name>
+      <SystemID>\\?\HID#VID_1C4F&amp;PID_0002&amp;MI_00#7&amp;6AAC8A4&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
     <Keyboard>
       <Name>Keyb4</Name>
       <SystemID>\\?\HID#VID_046D&amp;PID_C31C&amp;MI_00#7&amp;EC378B5&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
@@ -139,6 +139,22 @@
       <Name>Mouse3</Name>
       <SystemID>\\?\HID#VID_046D&amp;PID_C231#2&amp;1DD8BFAF&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Mouse>
+    <Keyboard>
+      <Name>Mouse4</Name>
+      <SystemID></SystemID>
+    </Keyboard>
+    <Mouse>
+      <Name>Mouse5</Name>
+      <SystemID></SystemID>
+    </Mouse>
+    <Game>
+      <Name>SpacePilot PRO 3Dmouse </Name>
+      <SystemID>A7175480:3E2B:11E8:8001444553540000</SystemID>
+    </Game>
+    <Keyboard>
+      <Name>Keyb5</Name>
+      <SystemID>\\?\HID#VID_1C4F&amp;PID_0002&amp;MI_00#8&amp;235F3312&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
     <Game>
       <Name>3Dconnexion KMJ Emulator</Name>
       <SystemID>A1A8B3C0:3C9D:11E8:8007444553540000</SystemID>
@@ -153,8 +169,8 @@
     </Mouse>
   </Devices>
   <Map>
-    <LastLatitude>50,10188601965</LastLatitude>
-    <LastLongitude>14,2264752029291</LastLongitude>
+    <LastLatitude>50.10188601965</LastLatitude>
+    <LastLongitude>14.2264752029291</LastLongitude>
     <LastZoom>13</LastZoom>
     <Locked>1</Locked>
     <AlwaysOnTop>1</AlwaysOnTop>

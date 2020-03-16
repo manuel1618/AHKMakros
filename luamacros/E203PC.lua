@@ -1,4 +1,8 @@
-lmc_device_set_name('makrokeyboard','EC378B5')
+print('Version: ' .. lmc.version)
+lmc.minimizeToTray = true
+lmc_minimize()
+
+lmc_device_set_name('makrokeyboard','6AAC8A4')
 lmc_print_devices()
 
 lmc_set_handler('makrokeyboard', function(button,direction)

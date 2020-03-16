@@ -102,7 +102,9 @@ Return
 installDir43v3 = %A_ProgramFiles%\DesignCockpit43 ; USERSPECIFIC
 Process, Exist, DesignCockpit43.exe
 	If errorLevel = 0
+	{
 		Run, %installDir43v3%\DesignCockpit43.exe
+	}
 	else
 	{
 	GroupAdd, designCockpits, ahk_exe DesignCockpit43.exe
@@ -117,9 +119,11 @@ Return
 
 ^numpad6::
 installDir43v2 = %A_ProgramFiles%\DesignCompiler43 ; USERSPECIFIC
-Process, Exist, DesignCockpit43.exe
+Process, Exist, DesignCompiler.exe
 	If errorLevel = 0
+	{
 		Run, %InstallDir43v2%\DesignCompiler43.exe
+	}
 	else
 	{
 	GroupAdd, designCompilers, ahk_exe DesignCompiler43.exe
