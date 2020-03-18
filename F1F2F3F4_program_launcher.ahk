@@ -37,8 +37,10 @@ if WinActive("ahk_class MozillaWindowClass")
 	Send ^+{tab} ;CTRL SHIFT TAB is the shortcut for "go to previous tab"
 if WinActive("ahk_class Chrome_WidgetWin_1")
 	Send ^+{tab}
+if WinActive("ahk_class MozillaWindowClass")
+	Send ^{PgUp}
 if WinActive("ahk_class Notepad++")
-	Send ^+{tab}
+	Send ^{PgUp}
 if WinActive("ahk_exe slack.exe")
 	Send !{up}
 if WinActive("ahk_exe Adobe Premiere Pro.exe")
@@ -60,7 +62,6 @@ Return
 
 
 ^numpad3::
-;you can comment out the next two lines if that happens to you...
 IfWinNotExist, ahk_class MozillaWindowClass
 	Run, firefox.exe
 if WinActive("ahk_class MozillaWindowClass")
@@ -81,17 +82,12 @@ Return
 
 
 ^numpad5::
-Process, Exist, WINWORD.EXE
-	If errorLevel = 0
-		Run, WINWORD.EXE
-	else
-	{
-	GroupAdd, taranwords, ahk_class OpusApp
-	if WinActive("ahk_class OpusApp")
-		GroupActivate, taranwords, r
-	else
-		WinActivate ahk_class OpusApp
-	}
+IfWinNotExist, ahk_class Notepad++
+	Run, notepad++
+if WinActive("ahk_class Notepad++")
+	Send ^{PgDn}
+else
+	WinActivate ahk_class Notepad++
 Return
 
 

@@ -140,11 +140,27 @@
       <SystemID>\\?\HID#VID_046D&amp;PID_C231#2&amp;1DD8BFAF&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Mouse>
     <Keyboard>
+      <Name>Mouse7</Name>
+      <SystemID></SystemID>
+    </Keyboard>
+    <Mouse>
       <Name>Mouse4</Name>
+      <SystemID></SystemID>
+    </Mouse>
+    <Keyboard>
+      <Name>Keyb7</Name>
       <SystemID></SystemID>
     </Keyboard>
     <Mouse>
       <Name>Mouse5</Name>
+      <SystemID></SystemID>
+    </Mouse>
+    <Keyboard>
+      <Name>Keyb8</Name>
+      <SystemID></SystemID>
+    </Keyboard>
+    <Mouse>
+      <Name>Mouse6</Name>
       <SystemID></SystemID>
     </Mouse>
     <Game>
