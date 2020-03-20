@@ -116,6 +116,18 @@
   </Macros>
   <Devices>
     <Keyboard>
+      <Name>Keyb7</Name>
+      <SystemID>\\?\HID#VID_1C4F&amp;PID_0002&amp;MI_00#7&amp;EE13623&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Keyboard>
+      <Name>Keyb8</Name>
+      <SystemID>\\?\ACPI#LEN0071#4&amp;110B26F5&amp;0#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Mouse>
+      <Name>Mouse4</Name>
+      <SystemID>\\?\ACPI#LEN0036#4&amp;110B26F5&amp;0#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Mouse>
+    <Keyboard>
       <Name>Keyb6</Name>
       <SystemID>\\?\HID#VID_1C4F&amp;PID_0002&amp;MI_00#7&amp;6AAC8A4&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
@@ -140,29 +152,9 @@
       <SystemID>\\?\HID#VID_046D&amp;PID_C231#2&amp;1DD8BFAF&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Mouse>
     <Keyboard>
-      <Name>Mouse7</Name>
-      <SystemID></SystemID>
-    </Keyboard>
-    <Mouse>
-      <Name>Mouse4</Name>
-      <SystemID></SystemID>
-    </Mouse>
-    <Keyboard>
-      <Name>Keyb7</Name>
-      <SystemID></SystemID>
-    </Keyboard>
-    <Mouse>
-      <Name>Mouse5</Name>
-      <SystemID></SystemID>
-    </Mouse>
-    <Keyboard>
-      <Name>Keyb8</Name>
-      <SystemID></SystemID>
-    </Keyboard>
-    <Mouse>
       <Name>Mouse6</Name>
       <SystemID></SystemID>
-    </Mouse>
+    </Keyboard>
     <Game>
       <Name>SpacePilot PRO 3Dmouse </Name>
       <SystemID>A7175480:3E2B:11E8:8001444553540000</SystemID>
