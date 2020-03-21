@@ -49,17 +49,25 @@ class HypermeshToolTip
 						  , "SEPARATOR": "313131"	;; color of the line between title and description
 						  , "TITLE": "00a9e1"
 						  , "DESCRIPTION": "ffc845"}
-		, DELAY := 2500		;; how many milliseconds the tooltip is displayed
+		, DELAY := 1500		;; how many milliseconds the tooltip is displayed
 		
 		
 ;; constructor for the keybind : hotkey, function, description
 	__New(keybind, name, description) {
 		;; added to display "CTRL+" in place of "^" in, f.i. "^c" which stands for "CTRL+C"
+				keybindTXT := keybind
 		IfInString, keybind, ^ 
 			{
 				keybindTXT:= StrReplace(keybind, "^", "CTRL+")
 			}	
-			else keybindTXT := keybind
+		IfInString, keybind, !
+			{
+				keybindTXT:= StrReplace(keybind, "!", "Alt+")
+			}	
+		IfInString, keybind, +
+			{
+				keybindTXT:= StrReplace(keybind, "+", "Shift+")
+			}	
 			
 		Gui New, +AlwaysOnTop -Caption +ToolWindow +Hwndhwnd
 		Gui Color, % this.COLOR_SCHEME.BACKGROUND
@@ -119,11 +127,11 @@ class HypermeshToolTip
 		Hotkey If, % fn
 			Hotkey % this.keybind, Off
 		Hotkey If
-	}
+  	}
 
 	;; check if the executable in the EXE static are active
 	isPremiereActive() {
-		return WinActive(HypermeshToolTip.EXE) && !A_CaretX
+		return WinActive(HypermeshToolTip.EXE)
 	}
 
 	;; shows the box
@@ -131,7 +139,25 @@ class HypermeshToolTip
 		WinGetPos x, y, w, h, % HypermeshToolTip.EXE
 		Gui %hwnd%: Show, % Format("x{} y{} NoActivate", x + HypermeshToolTip.MARGIN, h - HypermeshToolTip.MARGIN - HypermeshToolTip.GUI_HEIGHT )
 		
-		Send % "{" keybind "}"
+		
+		keysWhichHaveToBeSuroundedByBrackets := ["space","enter","up","down","left","right","bs","tab","insert","home","pgup","pgdn","delete","end","f2","f3","f4","f5","f6","f7","f8","f9","f10","f11","f12"] 
+		;; f1 is left away because its causing problems with f11 ,... dirty
+		for index, key in keysWhichHaveToBeSuroundedByBrackets
+		{
+			
+			IfInString, keybind, %key%
+			{
+				keyM = {%key%}
+				StringReplace, keybindWithModifiers, keybind, %key%, %keyM%
+				Break
+			}
+			else 
+			{
+				keybindWithModifiers := keybind
+			}
+		}
+			
+		Send %keybindWithModifiers%
 	}
 
 	;; hides the box

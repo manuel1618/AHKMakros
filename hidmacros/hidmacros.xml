@@ -116,6 +116,30 @@
   </Macros>
   <Devices>
     <Keyboard>
+      <Name>Keyb1</Name>
+      <SystemID>\\?\HID#VID_046D&amp;PID_C232#2&amp;33191FED&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Keyboard>
+      <Name>Keyb9</Name>
+      <SystemID>\\?\HID#VID_046D&amp;PID_C07D&amp;MI_01&amp;COL01#8&amp;B503633&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Keyboard>
+      <Name>Keyb10</Name>
+      <SystemID>\\?\HID#VID_1532&amp;PID_0109&amp;MI_00#9&amp;C52D4D1&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Keyboard>
+      <Name>Keyb11</Name>
+      <SystemID>\\?\HID#VID_03F0&amp;PID_0024#8&amp;2BADC4EF&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Mouse>
+      <Name>Mouse5</Name>
+      <SystemID>\\?\HID#VID_046D&amp;PID_C07D&amp;MI_00#8&amp;2F2773F5&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Mouse>
+    <Mouse>
+      <Name>Mouse3</Name>
+      <SystemID>\\?\HID#VID_046D&amp;PID_C231#2&amp;1DD8BFAF&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Mouse>
+    <Keyboard>
       <Name>Keyb7</Name>
       <SystemID>\\?\HID#VID_1C4F&amp;PID_0002&amp;MI_00#7&amp;EE13623&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
@@ -136,20 +160,12 @@
       <SystemID>\\?\HID#VID_046D&amp;PID_C31C&amp;MI_00#7&amp;EC378B5&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
     <Keyboard>
-      <Name>Keyb1</Name>
-      <SystemID>\\?\HID#VID_046D&amp;PID_C232#2&amp;33191FED&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
-    </Keyboard>
-    <Keyboard>
       <Name>Keyb2</Name>
       <SystemID>\\?\HID#VID_03F0&amp;PID_034A&amp;MI_00#7&amp;30494614&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
     <Mouse>
       <Name>Mouse1</Name>
       <SystemID>\\?\HID#VID_046D&amp;PID_C245&amp;MI_00#7&amp;31994F7A&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
-    </Mouse>
-    <Mouse>
-      <Name>Mouse3</Name>
-      <SystemID>\\?\HID#VID_046D&amp;PID_C231#2&amp;1DD8BFAF&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Mouse>
     <Keyboard>
       <Name>Mouse6</Name>

@@ -129,7 +129,6 @@ class ToolTip
 		Hotkey If, % fn
 			Hotkey % this.keybind, Off
 		Hotkey If
-		
 	}
 
 	;; check if the executable in the EXE static are active
