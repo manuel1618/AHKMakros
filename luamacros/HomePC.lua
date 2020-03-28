@@ -3,6 +3,9 @@ lmc.minimizeToTray = true
 lmc_minimize()
 
 lmc_device_set_name('makrokeyboard','2BADC4EF')
+lmc_device_set_name('makrokeyboard','158F47F5')
+
+
 lmc_print_devices()
 
 lmc_set_handler('makrokeyboard', function(button,direction)

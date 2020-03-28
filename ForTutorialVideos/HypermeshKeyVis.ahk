@@ -11,15 +11,15 @@ SetTitleMatchMode 2
 TooltipHotkeys := [new HypermeshToolTip("F1", "Help Me", "I pressed F1, so help me!")
 				 , new HypermeshToolTip("F2", "Delete", "")
 				 , new HypermeshToolTip("F3", "Replace", "")
-				 , new HypermeshToolTip("F4", "Distance", "Measure Distances but also for getting the circle center point")
+				 , new HypermeshToolTip("F4", "Distance", "Measure Distances")
 				 , new HypermeshToolTip("F5", "Mask", "Hide / and show Entities")
 				 , new HypermeshToolTip("F6", "Edit element: Combine", "")
 				 , new HypermeshToolTip("F7", "Node edit: Align", "")
 				 , new HypermeshToolTip("F8", "Create a Node", "")
 				 , new HypermeshToolTip("F9", "Line edit", "")
 				 , new HypermeshToolTip("F10", "Check Elements 2D", "")
-				 , new HypermeshToolTip("F11", "Quick Geometry Edit", "For fixing Geometry fast and easy")
-				 , new HypermeshToolTip("F12", "2D Automesh", "Creating 2D Element Meshes on Surfaces") ;Automesh
+				 , new HypermeshToolTip("F11", "Quick Geometry Edit", "")
+				 , new HypermeshToolTip("F12", "2D Automesh", "") ;Automesh
 				 , new HypermeshToolTip("+F1", "Colour", "")
 				 , new HypermeshToolTip("+F2", "Temporary Nodes", "")
 				 , new HypermeshToolTip("+F3", "Edges", "... also for equivalence")
