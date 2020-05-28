@@ -44,7 +44,7 @@ class HypermeshToolTip
 		 , PADDING := 5         ;; it will be called margin afterwards in the code, but really it's padding (inside margin if you want)
  		 , MARGIN := 50    ;; margin (only used in the ShowDescription)
 		 , TEXT_WIDTH := HypermeshToolTip.GUI_WIDTH - 2 * HypermeshToolTip.PADDING
-		 , EXE := "ahk_exe hw.exe"
+		 , EXE := "ahk_exe hwx.exe"
 		 , COLOR_SCHEME := {"BACKGROUND": "5f5d5d"    ;; background color, will be set a little bit transparent later on
 						  , "SEPARATOR": "313131"	;; color of the line between title and description
 						  , "TITLE": "00a9e1"
