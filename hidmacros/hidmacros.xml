@@ -14,107 +14,20 @@
     <BackupsCount>0</BackupsCount>
     <BackupPath>backup</BackupPath>
   </General>
-  <Macros>
-    <Macro>
-      <Device>Keyb4</Device>
-      <Name>STRG+NUM1</Name>
-      <KeyCode>97</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>^({NUM1})</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-    <Macro>
-      <Device>Keyb4</Device>
-      <Name>STRG+NUM2</Name>
-      <KeyCode>98</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>^({NUM2})</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-    <Macro>
-      <Device>Keyb4</Device>
-      <Name>STRG+NUM3</Name>
-      <KeyCode>99</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>^({NUM3})</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-    <Macro>
-      <Device>Keyb4</Device>
-      <Name>STRG+NUM4</Name>
-      <KeyCode>100</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>^({NUM4})</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-    <Macro>
-      <Device>Keyb4</Device>
-      <Name>STRG+NUM5</Name>
-      <KeyCode>101</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>^({NUM5})</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-    <Macro>
-      <Device>Keyb4</Device>
-      <Name>STRG+NUM6</Name>
-      <KeyCode>102</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>^({NUM6})</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-    <Macro>
-      <Device>Keyb4</Device>
-      <Name>STRG+SHIFT6</Name>
-      <KeyCode>105</KeyCode>
-      <Direction>down</Direction>
-      <Action>SEQ</Action>
-      <Sequence>^+({NUM6})</Sequence>
-      <SCEvent></SCEvent>
-      <XPLCommand></XPLCommand>
-      <ScriptSource></ScriptSource>
-      <SCText>0</SCText>
-      <SCParams></SCParams>
-      <Command></Command>
-    </Macro>
-  </Macros>
+  <Macros/>
   <Devices>
+    <Game>
+      <Name>Controller (XBOX 360 For Windows)</Name>
+      <SystemID>4F6550A0:7017:11EA:8001444553540000</SystemID>
+    </Game>
+    <Midi>
+      <Name>Midi1</Name>
+      <SystemID>Focusrite USB MIDI (ID 0)</SystemID>
+    </Midi>
+    <Mouse>
+      <Name>Mouse7</Name>
+      <SystemID>\\?\HID#VID_056A&amp;PID_0304&amp;COL01#8&amp;11689D30&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Mouse>
     <Keyboard>
       <Name>Keyb1</Name>
       <SystemID>\\?\HID#VID_046D&amp;PID_C232#2&amp;33191FED&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
@@ -124,12 +37,12 @@
       <SystemID>\\?\HID#VID_046D&amp;PID_C07D&amp;MI_01&amp;COL01#8&amp;B503633&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
     <Keyboard>
-      <Name>Keyb10</Name>
-      <SystemID>\\?\HID#VID_1532&amp;PID_0109&amp;MI_00#9&amp;C52D4D1&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+      <Name>Keyb12</Name>
+      <SystemID>\\?\HID#VID_0911&amp;PID_2188&amp;MI_00#A&amp;29248F99&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
     <Keyboard>
-      <Name>Keyb11</Name>
-      <SystemID>\\?\HID#VID_03F0&amp;PID_0024#8&amp;2BADC4EF&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+      <Name>Keyb13</Name>
+      <SystemID>\\?\HID#VID_1532&amp;PID_0109&amp;MI_00#7&amp;575B333&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
     <Mouse>
       <Name>Mouse5</Name>
@@ -139,6 +52,18 @@
       <Name>Mouse3</Name>
       <SystemID>\\?\HID#VID_046D&amp;PID_C231#2&amp;1DD8BFAF&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Mouse>
+    <Mouse>
+      <Name>Mouse8</Name>
+      <SystemID>\\?\HID#VID_0911&amp;PID_2188&amp;MI_01&amp;COL01#A&amp;54D51D7&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Mouse>
+    <Keyboard>
+      <Name>Keyb10</Name>
+      <SystemID>\\?\HID#VID_1532&amp;PID_0109&amp;MI_00#9&amp;C52D4D1&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Keyboard>
+      <Name>Keyb11</Name>
+      <SystemID>\\?\HID#VID_03F0&amp;PID_0024#8&amp;2BADC4EF&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
     <Keyboard>
       <Name>Keyb7</Name>
       <SystemID>\\?\HID#VID_1C4F&amp;PID_0002&amp;MI_00#7&amp;EE13623&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>

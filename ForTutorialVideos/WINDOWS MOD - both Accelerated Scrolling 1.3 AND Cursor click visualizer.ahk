@@ -207,6 +207,15 @@ Return
 Rbuttondown = -1
 Return
 
+~*$MButton::
+Mbuttondown = 1
+Return
+~*$MButton up::
+Mbuttondown = -1
+Return
+
+
+
 
 wheelkiller:
 ;msgbox, wheelkiller
@@ -263,6 +272,24 @@ If Rbuttondown = -1
 	Rbuttondown = 0
 	Gui, hide
 }
+
+; middle mouse button test (manuel)
+If Mbuttondown = 1
+{
+	posX := posX+5
+	posY := posY-15
+	GuiControl,, MyText, m
+	Gui, Show, x%posX% y%posY% NA
+
+}
+If Mbuttondown = -1
+{
+	Mbuttondown = 0
+	Gui, hide
+}
+
+; ende test (manuel)
+
 
 If Wup = 1
 {

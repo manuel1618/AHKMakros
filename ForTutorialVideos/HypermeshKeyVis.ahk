@@ -32,7 +32,7 @@ TooltipHotkeys := [new HypermeshToolTip("F1", "Help Me", "I pressed F1, so help 
 				 , new HypermeshToolTip("+F10", "Normals", "")
 				 , new HypermeshToolTip("+F11", "Organize", "Move or Copy Entities")
 				 , new HypermeshToolTip("+F12", "Smooth", "")
-				 , new HypermeshToolTip("^z", "Revert", "I screwed up")]  ;; <---- watch out, don't forget the ] here at the end of the last line
+				 , new HypermeshToolTip("^z", "Revert", "Undo last action")]  ;; <---- watch out, don't forget the ] here at the end of the last line
 ;; ------------ End of the shortcuts -----------------------------------------------------------------------------------------------------------------------------------------------
 
 ^r::Reload
