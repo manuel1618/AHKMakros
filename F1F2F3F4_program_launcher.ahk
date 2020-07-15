@@ -32,7 +32,7 @@ Menu, Tray, Icon, shell32.dll, 16 ;this changes the icon into a little laptop th
 #IfWinActive 
 
 ;F1 holds the "BACK" script.
-^numpad1::
+^!numpad1::
 if WinActive("ahk_class MozillaWindowClass")
 	Send ^+{tab} ;CTRL SHIFT TAB is the shortcut for "go to previous tab"
 if WinActive("ahk_class Chrome_WidgetWin_1")
@@ -50,7 +50,7 @@ if WinActive("ahk_exe explorer.exe")
 Return
 
 
-^numpad2::
+^!numpad2::
 IfWinNotExist, ahk_class CabinetWClass
 	Run, explorer.exe
 GroupAdd, taranexplorers, ahk_class CabinetWClass ;You have to make a new group for each application, don't use the same one for all of them!
@@ -61,7 +61,7 @@ else
 Return
 
 
-^numpad3::
+^!numpad3::
 IfWinNotExist, ahk_class MozillaWindowClass
 	Run, firefox.exe
 if WinActive("ahk_class MozillaWindowClass")
@@ -70,7 +70,7 @@ else
 	WinActivate ahk_class MozillaWindowClass
 Return
 
-^numpad4::
+^!numpad4::
 IfWinNotExist, ahk_exe slack.exe
 	Run, C:\Users\%A_UserName%\AppData\Local\slack\Update.exe --processStart "slack.exe", , Normal
 if WinActive("ahk_exe slack.exe")
@@ -81,7 +81,7 @@ Return
 
 
 
-^numpad5::
+^!numpad5::
 IfWinNotExist, ahk_class Notepad++
 	Run, notepad++
 if WinActive("ahk_class Notepad++")
@@ -90,45 +90,6 @@ else
 	WinActivate ahk_class Notepad++
 Return
 
-
-
-
-
-^+numpad6::
-installDir43v3 = %A_ProgramFiles%\DesignCockpit43 ; USERSPECIFIC
-Process, Exist, DesignCockpit43.exe
-	If errorLevel = 0
-	{
-		Run, %installDir43v3%\DesignCockpit43.exe
-	}
-	else
-	{
-	GroupAdd, designCockpits, ahk_exe DesignCockpit43.exe
-	if WinActive("ahk_exe DesignCockpit43.exe")
-		GroupActivate, designCockpits, r
-	else
-		WinActivate ahk_exe DesignCockpit43.exe
-	}
-Return
-
-
-
-^numpad6::
-installDir43v2 = %A_ProgramFiles%\DesignCompiler43 ; USERSPECIFIC
-Process, Exist, DesignCompiler.exe
-	If errorLevel = 0
-	{
-		Run, %InstallDir43v2%\DesignCompiler43.exe
-	}
-	else
-	{
-	GroupAdd, designCompilers, ahk_exe DesignCompiler43.exe
-	if WinActive("ahk_exe DesignCockpit43.exe")
-		GroupActivate, designCompilers, r
-	else
-		WinActivate ahk_exe DesignCockpit43.exe
-	}
-Return
 
 
 
@@ -149,7 +110,7 @@ Return
 
 
 
-^r:: Reload
+;^r:: Reload
 
 
 ;EXTRA STUFF YOU CAN DELETE

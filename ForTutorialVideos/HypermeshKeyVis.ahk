@@ -8,7 +8,7 @@ SetTitleMatchMode 2
 ;; original found here : https://www.youtube.com/watch?v=u9IhWCyPKso
 
 ;; ------------ Here after come the shortcuts -------------------------------------------------------------------------------------------------------------------------------------
-TooltipHotkeys := [new HypermeshToolTip("F1", "Help Me", "I pressed F1, so help me!")
+TooltipHotkeys := [new HypermeshToolTip("F1", "Help Me", "")
 				 , new HypermeshToolTip("F2", "Delete", "")
 				 , new HypermeshToolTip("F3", "Replace", "")
 				 , new HypermeshToolTip("F4", "Distance", "Measure Distances")
@@ -32,6 +32,8 @@ TooltipHotkeys := [new HypermeshToolTip("F1", "Help Me", "I pressed F1, so help 
 				 , new HypermeshToolTip("+F10", "Normals", "")
 				 , new HypermeshToolTip("+F11", "Organize", "Move or Copy Entities")
 				 , new HypermeshToolTip("+F12", "Smooth", "")
+				 , new HypermeshToolTip("Esc", "Go back", "")
+				 , new HypermeshToolTip("^+z", "Undo morphs", "Undo all current morphs")
 				 , new HypermeshToolTip("^z", "Revert", "Undo last action")]  ;; <---- watch out, don't forget the ] here at the end of the last line
 ;; ------------ End of the shortcuts -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -58,7 +60,7 @@ class HypermeshToolTip
 				keybindTXT := keybind
 		IfInString, keybind, ^ 
 			{
-				keybindTXT:= StrReplace(keybind, "^", "CTRL+")
+				keybindTXT:= StrReplace(keybind, "^", "Ctrl+")
 			}	
 		IfInString, keybind, !
 			{
@@ -67,6 +69,10 @@ class HypermeshToolTip
 		IfInString, keybind, +
 			{
 				keybindTXT:= StrReplace(keybind, "+", "Shift+")
+			}
+		IfInString, keybind, ^+
+			{
+				keybindTXT:= StrReplace(keybind, "^+", "Ctrl+Shift+")
 			}	
 			
 		Gui New, +AlwaysOnTop -Caption +ToolWindow +Hwndhwnd
@@ -140,7 +146,7 @@ class HypermeshToolTip
 		Gui %hwnd%: Show, % Format("x{} y{} NoActivate", x + HypermeshToolTip.MARGIN, h - HypermeshToolTip.MARGIN - HypermeshToolTip.GUI_HEIGHT )
 		
 		
-		keysWhichHaveToBeSuroundedByBrackets := ["space","enter","up","down","left","right","bs","tab","insert","home","pgup","pgdn","delete","end","f2","f3","f4","f5","f6","f7","f8","f9","f10","f11","f12"] 
+		keysWhichHaveToBeSuroundedByBrackets := ["space","enter","up","down","left","right","bs","tab","insert","home","pgup","pgdn","delete","end","f2","f3","f4","f5","f6","f7","f8","f9","f10","f11","f12", "esc"] 
 		;; f1 is left away because its causing problems with f11 ,... dirty
 		for index, key in keysWhichHaveToBeSuroundedByBrackets
 		{

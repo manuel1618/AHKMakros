@@ -25,8 +25,8 @@
       <SystemID>Focusrite USB MIDI (ID 0)</SystemID>
     </Midi>
     <Mouse>
-      <Name>Mouse7</Name>
-      <SystemID>\\?\HID#VID_056A&amp;PID_0304&amp;COL01#8&amp;11689D30&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+      <Name>Mouse3</Name>
+      <SystemID>\\?\HID#VID_046D&amp;PID_C231#2&amp;1DD8BFAF&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Mouse>
     <Keyboard>
       <Name>Keyb1</Name>
@@ -37,21 +37,45 @@
       <SystemID>\\?\HID#VID_046D&amp;PID_C07D&amp;MI_01&amp;COL01#8&amp;B503633&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
     <Keyboard>
-      <Name>Keyb12</Name>
-      <SystemID>\\?\HID#VID_0911&amp;PID_2188&amp;MI_00#A&amp;29248F99&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
-    </Keyboard>
-    <Keyboard>
       <Name>Keyb13</Name>
       <SystemID>\\?\HID#VID_1532&amp;PID_0109&amp;MI_00#7&amp;575B333&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Keyboard>
+    <Keyboard>
+      <Name>Keyb16</Name>
+      <SystemID>\\?\HID#VID_0911&amp;PID_2188&amp;MI_00#9&amp;10ED0222&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Mouse>
+      <Name>Mouse11</Name>
+      <SystemID>\\?\HID#VID_0911&amp;PID_2188&amp;MI_01&amp;COL01#9&amp;12EA3BA0&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Mouse>
     <Mouse>
       <Name>Mouse5</Name>
       <SystemID>\\?\HID#VID_046D&amp;PID_C07D&amp;MI_00#8&amp;2F2773F5&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Mouse>
     <Mouse>
-      <Name>Mouse3</Name>
-      <SystemID>\\?\HID#VID_046D&amp;PID_C231#2&amp;1DD8BFAF&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+      <Name>Mouse9</Name>
+      <SystemID>\\?\HID#VID_056A&amp;PID_0304&amp;COL01#8&amp;39705B2D&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
     </Mouse>
+    <Keyboard>
+      <Name>Keyb14</Name>
+      <SystemID>\\?\HID#VID_0911&amp;PID_2188&amp;MI_00#9&amp;35E9DAE8&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Keyboard>
+      <Name>Keyb15</Name>
+      <SystemID>\\?\HID#VID_1532&amp;PID_0109&amp;MI_00#8&amp;33DCA7C3&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
+    <Mouse>
+      <Name>Mouse10</Name>
+      <SystemID>\\?\HID#VID_0911&amp;PID_2188&amp;MI_01&amp;COL01#9&amp;415AAC5&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Mouse>
+    <Mouse>
+      <Name>Mouse7</Name>
+      <SystemID>\\?\HID#VID_056A&amp;PID_0304&amp;COL01#8&amp;11689D30&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Mouse>
+    <Keyboard>
+      <Name>Keyb12</Name>
+      <SystemID>\\?\HID#VID_0911&amp;PID_2188&amp;MI_00#A&amp;29248F99&amp;0&amp;0000#{884B96C3-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
+    </Keyboard>
     <Mouse>
       <Name>Mouse8</Name>
       <SystemID>\\?\HID#VID_0911&amp;PID_2188&amp;MI_01&amp;COL01#A&amp;54D51D7&amp;0&amp;0000#{378DE44C-56EF-11D1-BC8C-00A0C91405DD}</SystemID>
